@@ -1,0 +1,149 @@
+/* HTML Code */
+html{
+    display: none;
+}
+
+/* Header Code */
+.Master-Header{
+    height: auto;
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    margin-bottom: 10px;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+#My-Name{
+    font-family: 'Finger Paint';
+    font-size: 32px;
+    text-align: center;
+    opacity: 1
+}
+
+#My-Name:hover{
+    opacity: 0.75;
+}
+
+/* Nav Bar Code */
+#Master-Menu{
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    font-family: 'Copse';
+    background-color: white;
+}
+
+#Master-Menu ul{
+    height: auto;
+    padding: 8px 0;
+    margin: 0;
+}
+
+#Master-Menu li > a{
+    text-decoration: none;
+    color: #333333;
+}
+
+#Master-Menu li > a:hover{
+    text-decoration: underline;
+    opacity: 0.75;
+}
+
+#Master-Menu li{
+    display: inline;
+    padding: 25px;
+}
+
+/* Body Code */
+body{
+    background-color: #1f7e9a;
+}
+
+.gallery-panel{
+    margin: 60px;
+}
+
+.gal-img{
+    float: left;
+    height: 280px;
+
+}
+
+.gal-img img{
+    border: 10px solid white;
+    width: 100%;
+    max-height: 260px;
+    overflow: hidden;
+    height: auto;
+}
+
+/* Responsive Code */
+@media(min-width: 800px){
+    .active{
+        background-color: #1f7e9a;
+        border-radius: 8px 8px 0 0;
+        overflow: hidden;
+        border-top: solid medium #245269;
+        border-right: solid medium #245269;
+        border-left: solid medium #245269;
+
+    }
+    .active a{
+        color: white !important;
+    }
+}
+
+@media(max-width: 799px){
+    .active{
+        text-decoration: underline;
+    }
+}
+
+/* Response Code for Gallery Handling */
+@media(min-width: 1775px){
+    .gal-img{
+        margin: 1.8%;
+        width: 13%;
+    }
+}
+
+@media(min-width: 1500px) and (max-width: 1774px){
+    .gal-img{
+        margin: 2%;
+        width: 16%;
+    }
+}
+
+@media(min-width: 1250px) and (max-width: 1499px){
+    .gal-img{
+        margin: 2.5%;
+        width: 20%;
+    }
+}
+
+@media(min-width: 850px) and (max-width: 1249px){
+    .gal-img{
+        margin: 4%;
+        width: 25%;
+    }
+}
+
+@media(min-width: 650px) and (max-width: 849px){
+    .gal-img{
+        margin: 5%;
+        width: 40%;
+    }
+}
+
+@media(max-width: 649px){
+    .gal-img{
+        margin: 2%;
+        width: 96%;
+        height: auto;
+    }
+
+    .gal-img img{
+        max-height: none;
+    }
+}

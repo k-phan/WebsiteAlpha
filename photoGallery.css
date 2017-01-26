@@ -3,6 +3,14 @@ html{
     display: none;
 }
 
+/* Both Header + Nav Bar */
+.Title-Wrapper{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #1f7e9a;
+}
+
 /* Header Code */
 .Master-Header{
     height: auto;
@@ -32,6 +40,8 @@ html{
     font-size: 22px;
     font-family: 'Copse';
     background-color: white;
+    border-top: solid medium #245269;
+    border-bottom: solid medium #245269;
 }
 
 #Master-Menu ul{
@@ -57,6 +67,8 @@ html{
 
 /* Body Code */
 body{
+    position: relative;
+    top: 100px;
     background-color: #1f7e9a;
 }
 
@@ -79,14 +91,15 @@ body{
 }
 
 /* Responsive Code */
-@media(min-width: 800px){
+@media(min-width: 820px){
     .active{
         background-color: #1f7e9a;
-        border-radius: 8px 8px 0 0;
+        border-radius: 8px 8px 8px 8px;
         overflow: hidden;
         border-top: solid medium #245269;
         border-right: solid medium #245269;
         border-left: solid medium #245269;
+        border-bottom: solid medium #245269;
 
     }
     .active a{
@@ -94,9 +107,12 @@ body{
     }
 }
 
-@media(max-width: 799px){
+@media(max-width: 819px){
     .active{
         text-decoration: underline;
+    }
+    body{
+        top: 150px;
     }
 }
 
